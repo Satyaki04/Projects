@@ -58,8 +58,20 @@ public class swingCalculator{
             }
         });
 
+        JButton div=new JButton("Div");
+        div.setBounds(270, 250, 70,30);
+        div.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int num1=Integer.parseInt(t1.getText());
+                int num2=Integer.parseInt(t2.getText());
+                int r=num1/num2;
+                t3.setText(" "+r);
+            }
+        });
+
         JButton re=new JButton("Reset");
-        re.setBounds(270, 250, 70,30);
+        re.setBounds(350, 250, 70,30);
         re.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -69,8 +81,7 @@ public class swingCalculator{
             }
         });
 
-        
-        f.add(l1);f.add(l2);f.add(l3);f.add(t1);f.add(t2);f.add(t3);f.add(add);f.add(sub);f.add(mul);f.add(re);
+        f.add(l1);f.add(l2);f.add(l3);f.add(t1);f.add(t2);f.add(t3);f.add(add);f.add(sub);f.add(mul);f.add(div);f.add(re);
         f.setSize(400,300);
         f.setLayout(null);
         f.setVisible(true);
