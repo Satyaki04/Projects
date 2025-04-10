@@ -1,0 +1,1 @@
+Hi! I'm Satyaki Bhattacharya, a final year student of KIIT, Bhubaneshwar, Odisha persuing B.Tech (Computer Science & Engineering). This repository includes most of my project under different sectors using different programming languages.
